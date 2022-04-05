@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>aliyun</Name>
+  <Repository>messense/aliyundrive-webdav</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1642518122</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1022</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/aliyun</HostDir>
+      <ContainerDir>/etc/aliyundrive-webdav/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>cc51d310cba54d0daf21973acaa369b5</Value>
+      <Name>REFRESH_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>admin</Value>
+      <Name>WEBDAV_AUTH_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>admin</Value>
+      <Name>WEBDAV_AUTH_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="8080" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8080" Type="Port" Display="always" Required="false" Mask="false">1022</Config>
+  <Config Name="Host Path 1" Target="/etc/aliyundrive-webdav/" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /etc/aliyundrive-webdav/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/aliyun</Config>
+  <Config Name="Host Key 1" Target="REFRESH_TOKEN" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: REFRESH_TOKEN" Type="Variable" Display="always" Required="false" Mask="false">cc51d310cba54d0daf21973acaa369b5</Config>
+  <Config Name="Host Key 2" Target="WEBDAV_AUTH_USER" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: WEBDAV_AUTH_USER" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="Host Key 3" Target="WEBDAV_AUTH_PASSWORD" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: WEBDAV_AUTH_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+</Container>

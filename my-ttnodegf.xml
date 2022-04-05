@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ttnodegf</Name>
+  <Repository>tiptime/ttnode:latest</Repository>
+  <Registry/>
+  <Network>br0</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>--hostname ttnode</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1648831420</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/disks/002402113383</HostDir>
+      <ContainerDir>/mnt/data/ttnode</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/mnt/data/ttnode" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /mnt/data/ttnode" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/002402113383</Config>
+</Container>

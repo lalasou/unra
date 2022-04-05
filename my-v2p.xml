@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>v2p</Name>
+  <Repository>elecv2/elecv2p</Repository>
+  <Registry>https://hub.docker.com/r/elecv2/elecv2p</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontents.com/elecV2/elecV2P/master/web/dist/favicon.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1634222975</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8100</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8101</HostPort>
+        <ContainerPort>8001</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8102</HostPort>
+        <ContainerPort>8002</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/v2p/script</HostDir>
+      <ContainerDir>/usr/local/app/script</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/v2p/rootCA</HostDir>
+      <ContainerDir>/usr/local/app/rootCA</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/v2p/efss</HostDir>
+      <ContainerDir>/usr/local/app/efss</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Asia/Shanghai</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 80" Type="Port" Display="always" Required="false" Mask="false">8100</Config>
+  <Config Name="Host Port 2" Target="8001" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8001" Type="Port" Display="always" Required="false" Mask="false">8101</Config>
+  <Config Name="Host Port 3" Target="8002" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8002" Type="Port" Display="always" Required="false" Mask="false">8102</Config>
+  <Config Name="Host Path 1" Target="/usr/local/app/script" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /usr/local/app/script" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/v2p/script</Config>
+  <Config Name="Host Path 2" Target="/usr/local/app/rootCA" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /usr/local/app/rootCA" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/v2p/rootCA</Config>
+  <Config Name="Host Path 3" Target="/usr/local/app/efss" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /usr/local/app/efss" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/v2p/efss</Config>
+</Container>

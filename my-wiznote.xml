@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>wiznote</Name>
+  <Repository>wiznote/wizserver</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9991]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://pic1.zhimg.com/50/v2-eb754b02df5ea366ee6b881c4005ad7e_xl.jpg?source=54b3c3a5</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1626943728</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9991</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9269</HostPort>
+        <ContainerPort>9269</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/wiz/storage</HostDir>
+      <ContainerDir>/wiz/storage</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Asia/Shanghai</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/wiz/storage" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /wiz/storage" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/wiz/storage</Config>
+  <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 80" Type="Port" Display="always" Required="false" Mask="false">9991</Config>
+  <Config Name="Host Port 2" Target="9269" Default="" Mode="udp" Description="&#x5BB9;&#x5668; Port: 9269" Type="Port" Display="always" Required="false" Mask="false">9269</Config>
+</Container>

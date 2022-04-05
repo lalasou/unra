@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>music</Name>
+  <Repository>oldiy/music-player-docker</Repository>
+  <Registry>https://hub.docker.com/r/oldiy/music-player-docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1608571036</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>264</HostPort>
+        <ContainerPort>264</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/NAS/music/</HostDir>
+      <ContainerDir>/var/www/html/cache</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="264" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 264" Type="Port" Display="always" Required="false" Mask="false">264</Config>
+  <Config Name="Host Path 1" Target="/var/www/html/cache" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /var/www/html/cache" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/NAS/music/</Config>
+</Container>

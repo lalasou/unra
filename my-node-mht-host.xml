@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>node-mht-host</Name>
+  <Repository>registry.cn-hangzhou.aliyuncs.com/bd/node-mht:ipes-v10_9_46_407</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>--hostname=node-mht-host</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1637588534</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/disks/LITEONIT_LMT-19nmBGA-64G-DS_002402113383/</HostDir>
+      <ContainerDir>/disk/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/node-mht-host</HostDir>
+      <ContainerDir>/apps/mount</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/disk/" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /disk/" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/LITEONIT_LMT-19nmBGA-64G-DS_002402113383/</Config>
+  <Config Name="Host Path 2" Target="/apps/mount" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /apps/mount" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/node-mht-host</Config>
+</Container>

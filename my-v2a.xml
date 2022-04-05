@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>v2a</Name>
+  <Repository>mzz2017/v2raya:1.5.6.2</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1648054272</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>2017</HostPort>
+        <ContainerPort>2017</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>20170-20172</HostPort>
+        <ContainerPort>20170-20172</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/v2a</HostDir>
+      <ContainerDir>/etc/v2raya</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1</Value>
+      <Name>V2RAYA_PASSCHECKROOT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="2017" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 2017" Type="Port" Display="always" Required="false" Mask="false">2017</Config>
+  <Config Name="Host Port 2" Target="20170-20172" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 20170-20172" Type="Port" Display="always" Required="false" Mask="false">20170-20172</Config>
+  <Config Name="Host Path 1" Target="/etc/v2raya" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /etc/v2raya" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/v2a</Config>
+  <Config Name="Host Key 1" Target="V2RAYA_PASSCHECKROOT" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: V2RAYA_PASSCHECKROOT" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+</Container>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>filebrowser</Name>
+  <Repository>80x86/filebrowser:2.9.4-amd64</Repository>
+  <Registry>https://registry.hub.docker.com/r/80x86/filebrowser</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8081]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/maschhoff/docker/master/filebrowser/35781395.png</Icon>
+  <ExtraParams>--mount type=tmpfs,destination=/tmp --device /dev/dri:/dev/dri</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1648053013</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8081</HostPort>
+        <ContainerPort>8081</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/filebrowser/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/</HostDir>
+      <ContainerDir>/myfiles</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8081</Value>
+      <Name>WEB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>127.0.0.1</Value>
+      <Name>FB_AUTH_SERVER_ADDR</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Key 1" Target="PUID" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Host Key 2" Target="PGID" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Host Key 3" Target="WEB_PORT" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: WEB_PORT" Type="Variable" Display="always" Required="false" Mask="false">8081</Config>
+  <Config Name="Host Key 4" Target="FB_AUTH_SERVER_ADDR" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: FB_AUTH_SERVER_ADDR" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
+  <Config Name="Host Port 1" Target="8081" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8081" Type="Port" Display="always" Required="false" Mask="false">8081</Config>
+  <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filebrowser/</Config>
+  <Config Name="Host Path 2" Target="/myfiles" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /myfiles" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+</Container>

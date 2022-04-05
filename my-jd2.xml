@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jd2</Name>
+  <Repository>evinedeng/jd:gitee</Repository>
+  <Registry>https://registry.hub.docker.com/r/evinedeng/jd</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>-it --hostname jd</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1611883175</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jd2/config/</HostDir>
+      <ContainerDir>/jd/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jd2/log/</HostDir>
+      <ContainerDir>/jd/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/jd/config" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /jd/config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jd2/config/</Config>
+  <Config Name="Host Path 2" Target="/jd/log" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /jd/log" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jd2/log/</Config>
+</Container>
